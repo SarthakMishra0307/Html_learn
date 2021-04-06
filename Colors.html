@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors</title>
+    <style>
+        .rgb{
+            background-color: rgb(0, 255, 159);
+        }
+
+        .ffa{
+            background-color: #9f91db;
+        }
+
+        .hsl{
+            background-color: hsl(25, 100%, 69%);
+        }
+
+        .rgba{
+            background-color: rgba(255, 99, 71, 0.5);
+        }
+
+        .hsla{
+            background-color: hsla(208, 100%, 50%, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="rgb"> <!-- Each parameter (red, green, and blue) defines the intensity of the color with a value between 0 and 255.
+                        This means that there are 256 x 256 x 256 = 16777216 possible colors! 
+                        To display black, set all color parameters to 0, like this: rgb(0, 0, 0).
+                        To display white, set all color parameters to 255, like this: rgb(255, 255, 255).-->
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic modi et fuga commodi. Voluptates, sapiente.</p>
+
+    </div>
+
+    <div class="ffa"><!--   Where rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255).
+                        For example, #ff0000 is displayed as red, because red is set to its highest value (ff), and the other two (green and blue) are set to 00. -->
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione eum similique doloribus nihil, ipsa impedit placeat non vitae id delectus.</p>
+    
+    </div>
+    <!-- different shades -->
+    <h1 style="background-color:#404040;">#404040</h1>
+    <h1 style="background-color:#686868;">#686868</h1>
+    <h1 style="background-color:#a0a0a0;">#a0a0a0</h1>
+    <h1 style="background-color:#bebebe;">#bebebe</h1>
+    <h1 style="background-color:#dcdcdc;">#dcdcdc</h1>
+    <h1 style="background-color:#f8f8f8;">#f8f8f8</h1>
+
+    <div class="hsl"><!--Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.
+            Saturation is a percentage value, 0% means a shade of gray, and 100% is the full color.
+            Saturation can be described as the intensity of a color.
+            Lightness is also a percentage value, 0% is black, and 100% is white.  -->
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni ipsum eos quo voluptatem animi quidem.</p>
+    </div>
+
+    <div class="rgba"><!--The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all):  -->
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis, minima ea molestiae atque aut quidem distinctio recusandae!</p>
+    </div>
+
+    <div class="hsla"><!--  -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore facilis voluptatum alias officia nemo dolores corporis accusamus eveniet deleniti, sapiente iste culpa doloribus porro quam molestiae nostrum numquam at debitis?</p>
+    </div>
+</body>
+</html>

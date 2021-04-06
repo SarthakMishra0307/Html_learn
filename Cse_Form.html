@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+    <style>
+        .text1{
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <form action="SecondPage.html"> <!-- link here -->
+
+        <label for="txtName">Name</label>
+        <input type="text" id="txtName" name="txtName" class="text1">
+        <br><br>
+
+        <h3>Radio Button</h3>
+        <label>Gender</label>
+        <input type="radio" id="idomale" name="Gender" value="Male">
+        <label for="idomale">Male</label>
+        <input type="radio" id="idofemale" name="Gender" value="Female">
+        <label for="idofemale">Female</label>
+        <input type="radio" id="idoOthers" name="Gender" value="Other">
+        <label for="Other">Other</label>
+
+        <h3>Chech Box</h3>
+        <label for="Vehicles"></label>
+        <input type="checkbox" name="Vehicles" id="chkV1" value="Bike" checked>
+        <label for="chkV1">Bike</label>
+        <input type="checkbox" name="Vehicles" id="chkV2" value="Car" checked>
+        <label for="chkV2">Car</label>
+        <input type="checkbox" name="Vehicles" id="chkV3" value="Other">
+        <label for="chkV3">Other</label>
+
+        <h3>Simple List</h3>
+        <label for="!stColor">Favourite Color</label>
+        <select name="Color" id="1stColor" name="Colors" multiple>
+        <option value="Red">Red</option>
+        <option value="Blue">Blue</option>
+        <option value="Black">Black</option>
+        <option value="Green">Green</option>
+
+        <h3>Simple List with size</h3>
+        <label for="2ndColor">Favourite Color</label>
+        <select name="Colors" id="1stColor" name="Colors" multiple size="1">
+        <option value="Red">Red</option>
+        <option value="Blue">Blue</option>
+        <option value="Black">Black</option>
+        <option value="Green">Green</option>
+
+        <h3>Simple List with size and default</h3>
+        <label for="2ndColor">Favourite Color</label>
+        <select name="Colors" id="1stColor" name="Colors" multiple size="1">
+        <option value="Red">Red</option>
+        <option value="Blue" selected>Blue</option>
+        <option value="Black">Black</option>
+        <option value="Green">Green</option>
+
+        <h3>Text Area to collect information with multiple lines</h3>
+
+
+        <label for="browser">Choose your browser from the list:</label>
+        <input list="browsers" name="browser" id="browser">
+
+        <datalist id="browsers">
+        <option value="Edge">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+        </datalist>
+
+
+
+        
+
+        </select>
+        <input type="submit" vallue="next">        
+    </form>
+    <script>
+        document.getElementById('chkV2').disabled=true;
+    </script>
+</body>
+</html>
