@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+    .main{
+    background-color: lightslategrey;
+    width: 90%;
+    height: 100vh;
+    margin: 20px auto;
+    padding: 10px;
+    border: 2px solid green;
+    display: grid;
+    /*
+    2 - rows
+    3 - cols
+    */
+    /*Using rows we need to define the numbers with
+    height of each row*/
+    grid-template-rows: repeat(2,auto);
+    /*
+    Values for columns will decide the width of each
+    fr - fractional unit
+    */
+    /*grid-template-columns: 1fr 1fr 1fr;*/
+    /* grid-template-columns: auto auto auto;*/
+    /*
+    short-hand approach for setting the width
+    */
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    }
+    
+    .div1{
+    background-color: lightcoral;
+    grid-row-start: 2;
+    grid-column-start: 3;
+    }
+    .div2{
+    background-color: lightgoldenrodyellow;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    }
+    .div3{
+    background-color: lightgray;
+    grid-row-start: 1;
+    grid-column-start: 2;
+    }
+    .div4{
+    background-color: lightpink;
+    grid-row-start: 1;
+    grid-column-start: 3;
+    }
+    .div5{
+    background-color: lightgreen;
+    grid-row-start: 2;
+    grid-column-start: 1s;
+    }
+    .div6{
+    background-color: lightsalmon;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    }
+    

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Tables</title>
+<style>
+tr:nth-child(even){
+background-color: lightgreen;
+}
+tr:nth-child(odd){
+background-color: lightpink;
+}
+tr:hover{
+background-color: lightgoldenrodyellow;
+}
+#id1,#id1 th,#id1 td{
+/* border: 1px solid black;*/
+padding: 10px;
+border-collapse: collapse;
+}
+#id1{
+width: 100%;
+}
+#id1 td{
+width: 30%;
+text-align: center;
+/*background-color: whitesmoke;*/
+/*border-top: 3px solid black;*/
+border-bottom: 3px solid black;
+vertical-align: top;
+}
+#id1 th{
+/*background-color: lightsalmon;*/
+border-top: 3px solid black;
+border-bottom: 3px solid black;
+height: 50px;
+}
+caption{
+caption-side: bottom;
+}
+
+</style>
+</head>
+<body>
+<table id="id1">
+<caption>Data of the Students</caption>
+<thead>
+<tr>
+<th>Sl. No.</th>
+<th>Name</th>
+<th>Address</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Pravesh Kumar</td>
+<td>Mumbai</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Srikanth Khapate</td>
+<td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos cumque error eligendi rem, expedita reiciendis officia, praesentium dicta ab hic neque maiores necessitatibus voluptates enim ut quibusdam non veritatis dolorem laudantium velit. Neque ipsa aspernatur fugiat laudantium, quibusdam officiis culpa hic odio facilis laboriosam, inventore necessitatibus quod facere nisi aliquam odit atque modi quidem rerum enim sunt voluptates repellendus nihil impedit! Quod accusantium aut illum omnis hic! Voluptatem quas vel, sit veniam eius hic, sequi perspiciatis repudiandae quisquam, eos rerum? Soluta odit vel iure quo corporis nulla impedit, magni ea repellendus nobis nesciunt accusantium facilis suscipit assumenda. Non, hic ab!</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Ajay Kumar</td>
+<td>Bengalore</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

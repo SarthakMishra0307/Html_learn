@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tables</title>
+    <style>
+        table,th{
+            border: 2px solid red;
+            border-collapse: collapse;
+        }
+        td{
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <table> 
+        <!--Header Part-->
+        <thead>
+            <tr>
+                <th>S1 no.</th>
+                <th>Name</th>
+                <th>Section</th>
+            </tr>
+        </thead>
+        <!--body part-->
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Smriti</td>
+                <td>K20KT</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Gaurav</td>
+                <td>K20KT</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h1>Tables with Column Merge(colspan)</h1>
+    <table border="2px" bgcolor="yellow" width="400px" height="300px" padding = "40px">
+        <thead>
+            <tr>
+                <td>S no.</td>
+                <td>Name</td>
+                <td>Section</td>
+                <td>CGPA</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2">1 Shruti</td>
+                <td colspan="2">K20Kt 8.96</td>
+            </tr>
+            <tr>
+                <td colspan="4">2 Sarthak K20RU 9.99</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Gaurav</td>
+                <td>K20KT</td>
+                <td>8.21</td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+</body>
+</html>
