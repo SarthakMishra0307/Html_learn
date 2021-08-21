@@ -1,0 +1,65 @@
+*{
+padding:0;
+margin: 0;
+font-family: sans-serif;
+
+}
+body{
+background: url('../pics/Power.jpg') no-repeat;
+height:100hv;
+background-size: cover;
+background-position:middle;
+margin:10px;
+
+}
+.login{
+	width:350px;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	position: absolute;
+	color: solid black;
+}
+
+.login h1{
+	
+	font-size:20px;
+	text-align: left;
+	text-transform:uppercase;
+	margin:10px 0;
+	
+}
+.login input{
+	font-size: 16px;
+	width:100%;
+	padding:12px 8px;
+	border:2px;
+	outline:none;
+	border-radius:5px;
+}
+.login p{
+	font-size: 20px;
+	margin: 15px 0;
+}
+
+.main ul{ 
+    float:right;
+	text-align:right;
+	list-style-type: none;
+	margin-top: 30px;
+	width:500px;
+}
+ul li{
+	display:inline-block;
+}
+ul li a{
+	text-decoration:none;
+	color:#fff;
+	padding:5px 20px;
+	border: 1px solid #fff;
+	transition:0.6s ease;
+}
+ ul li a:hover{
+	 background-color:#fff;
+	 color:#000;
+ }

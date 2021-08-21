@@ -1,0 +1,83 @@
+*{
+padding:0;
+margin: 0;
+font-family: sans-serif;
+
+}
+body{
+background: url('../pics/Power2.jpg') no-repeat;
+height:250hv;
+background-size:cover;
+background-position:cover;
+margin:10px;
+
+}
+table{
+	border-collapse:collapse;
+	display:inline-block;
+	margin-top:100px;
+	text-align:left;
+	margin-left:450px;
+	width:500px;
+	
+	
+}
+table h1{
+	font-style:italic;
+}
+table th{
+	margin:10px;
+	text-align:left;
+	background-color:#3o6070;
+	color:#FFF;
+	padding:6px 10px;
+	width:500px;
+	
+}
+table td{
+	padding: 6px 10px;
+	border:2px solid #e3e3e3;
+}
+table tr:nth-child(even) td{
+	background-color:#e7edf0;
+}
+table tr:nth-child(odd) td{
+	background-color:#e3e3e3;
+}
+table tr:nth-child(odd) th{
+	background-color:#000;
+	
+}
+table tr:nth-child(even) th{
+	background-color:#000;
+}
+table tr:hover td{
+	background-color:red;
+	color:#fff;
+}
+
+
+
+
+
+.main ul{ 
+    float:right;
+	text-align:right;
+	list-style-type: none;
+	margin-top:-920px;
+	width:500px;
+}
+ul li{
+	display:inline-block;
+}
+ul li a{
+	text-decoration:none;
+	color:#fff;
+	padding:5px 20px;
+	border: 1px solid #fff;
+	transition:0.6s ease;
+}
+ ul li a:hover{
+	 background-color:#fff;
+	 color:#000;
+ }

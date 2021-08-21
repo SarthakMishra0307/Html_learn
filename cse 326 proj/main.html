@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Electricity Pay Counter</title>
+    <link rel="shortcut icon" href="phone-512.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
+    <link rel="stylesheet" href="css\main.css">
+    <script>
+        function more(){
+        document.getElementById('info-states-more').style="display:block";
+        document.getElementById('info-states-less').style="display:none";
+        document.getElementById('btnLess').style="display:block";
+        document.getElementById('btnCont').style="display:none";
+        document.getElementById('other-container').style="margin-bottom: 10px;";
+
+        }
+        function less(){
+        document.getElementById('info-states-more').style="display:none";
+        document.getElementById('info-states-less').style="display:block";
+        document.getElementById('btnLess').style="display:none";
+        document.getElementById('btnCont').style="display:block";
+        document.getElementById('other-container').style="margin-bottom: 120px;";
+        }
+        
+        function clickAlert() {
+        alert("Your Credentials Have Been Saved");
+}
+    </script>
+</head>
+<body>
+    <div class= "container">
+        <div class="topNavBar">
+            <i id="icon2" class="material-icons">
+                bolt
+            </i>
+                <a href="#" id="tag">Home</a>
+                <a href="About us.html" id="tag">About</a>
+                <a href="contactus.html" id="tag">Contact Us</a>
+            <i id="icon1" class="material-icons">
+                bolt
+            </i>
+        </div>
+        <div class="loginContainer" id="log-in">
+            <form id="formContainer">
+                <h3 class= "head-text" id="login-text">Login</h3>
+                <label class="user-"for="Username"> Username: </label>
+                <input class="user-in" type="text" name = "Username" placeholder="Enter Your Name..." required>
+                <div class="pass-in">
+                    <label class="pass-"for="Password">Password: </label>
+                    <input class="pass-label"type="password" name = "Password" placeholder="Password" required>
+                </div>
+                <div class= "log-buttons" id="but-submit">
+                    <input type="submit" value="submit" onclick="clickAlert()" value="Click-2-Alert">
+                </div>
+                <div class= "log-buttons" id="but-reset">
+                    <input type="reset" value="reset">
+                </div>
+                <div class="FG">
+                    <a href="#">-Forgot Password</a>
+                </div>  
+            </form>
+        </div>
+        <div class="faq-container" id="log-in">
+            <h3 class="head-text" id= "faq-text" >FAQ's</h3>
+            <ul class="faq-text">
+                <li>How does electricity work?</li><br>
+                <li>What is electricity generation by energy source?</li><br>
+                <li>Can electric utility customers choose their electricity supplier?</li><br>
+                <li>How much coal, natural gas, or petroleum is used to generate a kilowatthour of electricity?</li><br>
+                <li>How many nuclear power plants are <br> in India, and where are they located?</li>
+            </ul>
+        </div>
+
+        <div class="links-container" id="log-in">
+            <h3 class="head-text">Quick Links</h3>
+            <ol class= "order-class">
+                <li><a href="page1.html">Pay Your Bills</a></li><br>
+                <li><a href="page2.html">Consumption History</a></li><br>
+                <li><a href="page3.html">Nearest Service</a></li><br>
+                <li><a href="page4.html">New connection</a></li><br>
+            </ol>  
+        </div>
+
+        <div class= "other-container" id="other-container">
+            <h3 class="head-text" id="head-text">High Consumption State</h3>
+            <ul class="info-states" id="info-states-less">
+                <li>Dadra And Nagar Haveli</li>
+                <li>Gujarat</li>
+                <li>Goa</li>
+                <li>Haryana</li>
+                <li>Punjab</li>
+                <li>...</li>
+            </ul>
+            <ul class="info-states" id="info-states-more" style="display: none;">
+                <li>Dadra And Nagar Haveli</li>
+                <li>Gujarat</li>
+                <li>Goa</li>
+                <li>Haryana</li>
+                <li>Punjab</li>
+                <li>Bihar</li>
+                <li>Assam</li>
+                <li>Nagaland</li>
+                <li>Manipur</li>
+                <li>Tripura</li>
+            </ul>
+            <button class="btn btn1" id="btnCont" type="button" onclick="-more()">
+            -continue
+            </button>
+            <button class="btn btn2" id="btnLess" type="button" onclick="less()" style="display: none;">
+            -less
+            </button>
+        </div>
+
+        <div class="main-content"></div>
+        <div class="cont-text">
+            <h2 id="text-head"><u> Ways to Save Electricity!!! </u></h2>
+            <pre class="para1"> 
+        <b>1. Switch to energy-efficient light bulbs: </b><br>
+        Switching to energy-efficient bulbs is an easy way to save shed-loads of electricity. 
+        The traditional types – known as incandescent bulbs – only convert 10% of the energy used to power them into light. 
+        The rest is lost as heat!
+        <br>
+
+        <b></b> 2. Turn off appliances on standby: <br></b>
+        According to the Energy Saving Trust, the average UK household spends £35 a year on appliances left on standby.
+        This is because, when you leave devices like TVs or stereos on standby, rather than switching them off, they still
+        use power. But there’s an easy solution – turn them off at the mains when you’re not using them! <br>
+
+        <b>3. Be more energy-efficient with your fridge and freezer: <br></b>
+        Clean the coils – it might not come top of the list of chores, but the coils at the back of your fridge get dirty
+        over time. Wiping them clean can make a big difference in boosting the energy-efficiency of your fridge. According
+        to the Consumer Energy Center, doing this could actually lower your fridge’s energy use by as much as 30%. Time to
+        get scrubbing!
+        Keep them full –  by keeping your fridge and freezer at least three-quarters full, you can make sure that they don’t
+        waste energy heating empty air. But remember, don’t cram them too full either – this could stop air from circulating,
+        which will also use more energy. 
+
+
+        <b>4. Be more efficient when cooking: <br></b>
+        As you’d expect, if you spend less time cooking, you’ll use less energy. So it’s worth thinking about how you can
+        change your cooking habits when you’re making dinner. Try making these small changes:
+        Heat water in a kettle rather than on the hob.
+
+        <b>5. Wash your clothes on a lower temperature:  <br></b>
+        Simply by moving down the dial on your washing machine, you can make huge energy savings. According to the Energy
+        Saving Trust, washing your clothes at  30˚C will save you 40% of the energy used washing at higher temperatures. 
+        And a study by Which? found that if the whole of the UK switched to washing at 30˚C, it would cut 388,000 tonnes 
+        of carbon – the equivalent of taking more than 388,000 cars off the road.
+        Nowadays, modern detergents are able to get just as good results at lower temperatures. So there’s no reason not 
+        to make the change and start washing at 30˚C.
+
+        <b>6. Air dry your clothes: <br></b>
+        If you have a tumble dryer, it can be tempting to use it all the time. But on a sunny day, it’s always worth hanging 
+        up your clothes outside if you can. They’ll dry quicker, and it’ll save you money.
+
+        <b>7. Use natural light: <br> </b>
+        It might seem obvious, but opening the curtains can help to cut down on electricity. Of course, solar power is an
+        amazing way to generate electricity – but just by letting in more sunlight, we can cut back on how much we use our
+        lights indoors. Plus, it’ll give you an extra dose of vitamin D! And don’t forget to turn off lights when you’re 
+        not using them, as this can save you £15 a year8. 
+        But remember, when it’s dark, it’s just as important to keep those curtains closed. This will stop warmth from 
+        escaping, so you can use less heating and keep bills down.
+
+        <b>8. Don’t overfill your kettle: <br> <b></b>
+        If you’re making a cup of tea, only fill the kettle with the amount of water you need. This way, you won’t use 
+        any unnecessary energy boiling it, and your cuppa will be ready quicker. According to the Energy Saving Trust,
+        this can save you £6 a year – which could buy you around 500 tea bags!
+            </pre>
+        </div>
+
+        <div class="botvid">
+            <video id="vidMain" controls loop pause>
+                <source src="..\pics\botvid.mp4" type="video/mp4">
+            </video>
+        </div>
+        
+    </div>
+    <div class="copyright"><p> © Indian Electricity-All Rights Reserved</p></div>
+</body>
+</html>
